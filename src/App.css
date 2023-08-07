@@ -1,0 +1,42 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+} 
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.movies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*con estas 2 lineas se hace responsive el grid*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /*200px,1fr 1fr-> lo convierte en 2 columna de 100px*/
+  width: 100%;
+  height: 100%;
+  /*separacion entre elementos*/
+  gap: 16px;
+}
+.movie {
+  text-align: center;
+}
+.movie h3, .movie p {
+  padding: 0;
+}
+.movie img{
+  border-radius: 8px;
+
+}
