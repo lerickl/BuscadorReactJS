@@ -1,4 +1,4 @@
-import './app.css'
+import './App.css'
 
 import { useMovies } from './hocks/useMovies'
 import { Movies } from './components/movies'
