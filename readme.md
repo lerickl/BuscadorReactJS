@@ -24,3 +24,13 @@ Primera iteracion
 [✅]- Haz que la busqueda se haga automaticamente al escribir
 
 [✅]- Evita que se haga la busca continuamente al escribir
+
+
+para desplegar en githubpages:
+agrego la siguiente configuracion a vite.config.js
+base: 'https://lerickl.github.io/BuscadorReactJS'
+npm i --save -D gh-pages
+agrego a package los scripts: 
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+npm run deploy
