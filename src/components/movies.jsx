@@ -1,14 +1,19 @@
+ 
 function ListOfMovies({ movies }){
     return (
-        <ul className="movies">
+        <section className="movies px-5 py-5">
             {movies.map(movie =>(
-                <li className="movie" key={movie.id}>
+                <article className="movie" key={movie.id}>
                     <h3>{movie.title}</h3>
-                    <p>{movie.year}</p>
-                    <img src={movie.poster} alt={movie.title}/>
-                </li>
+                    <p hidden>{movie.id}</p>
+                    <img           
+                    src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+                 
+                    alt={movie.title} 
+                   />
+                </article>
             ))}
-        </ul>
+        </section>
     )
 
 }
